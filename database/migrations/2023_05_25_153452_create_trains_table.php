@@ -21,7 +21,7 @@ return new class extends Migration
             $table->dateTime('estimated_departure');
             $table->dateTime('estimated_arrival');
             $table->string('train_code', 10);
-            $table->smallInteger('N_coach')->unsigned();
+            $table->tinyInteger('N_coach')->unsigned();
             $table->boolean('on_time')->default(true);
             $table->boolean('cancelled')->default(false);
             $table->timestamps();

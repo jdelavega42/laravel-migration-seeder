@@ -17,6 +17,14 @@
 
 <body>
     <h1>Laravel Migration Seeder</h1>
+    <ul>
+
+        @foreach ($trains as $train)
+            <li>
+                <p>{{$train->company}}</p>
+            </li>
+        @endforeach
+    </ul>
 </body>
 
 </html>
